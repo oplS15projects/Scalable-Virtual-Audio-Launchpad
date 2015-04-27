@@ -3,8 +3,11 @@
 
 ##Authors
 Luis Perez
+
 Yuet Leung
+
 Yesehaq Fauconier
+
 Zachary Wong
 
 ##Overview
