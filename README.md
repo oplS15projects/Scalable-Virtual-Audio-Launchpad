@@ -4,7 +4,7 @@
 ##Authors
 Luis Perez
 
-Yuet Leung
+YuetLong Leung
 
 Yesehaq Fauconier
 
@@ -34,17 +34,11 @@ Utilizes filestreaming and rsound.  We created a folder that contains all our au
 (define-runtime-path sounds "./sounds/")
 (define workit-path (build-path sounds "workit.wav"))
 (define work (clip (rs-read workit-path) 0 23321))
-```
-####Lillian (another team member)
 
-This expression reads in a regular expression and elegantly matches it against a pre-existing hashmap....
-```scheme
-(let* ((expr (convert-to-regexp (read-line my-in-port)))
-             (matches (flatten
-                       (hash-map *words*
-                                 (lambda (key value)
-                                   (if (regexp-match expr key) key '()))))))
-  matches)
+#### YuetLong Leung
+(make-insert-ksp "q" "workit.wav")
+One procedure to associate a keyboard input to the playback operation of a wav file.
+It also used the database I designed, which is awesome.
 ```
 
 ##Additional Remarks
