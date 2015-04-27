@@ -2,10 +2,10 @@
 
 
 ##Authors
-*Luis Perez
-*Yuet Leung
-*Yesehaq Fauconier
-*Zachary Wong
+Luis Perez
+Yuet Leung
+Yesehaq Fauconier
+Zachary Wong
 
 ##Overview
 A virtual launchpad that plays sampled or recorded audio in a matrix of buttons with a certain tempo.
