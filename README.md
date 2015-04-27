@@ -1,39 +1,39 @@
 # Scalable-Virtual-Audio-Launchpad
 
-This is a template for using your repo's README.md as your project web page. 
-I recommend you copy and paste into your README file. Delete this line and the one above it, customize everything else. Make it look good!
 
 ##Authors
-Person One
-
-Person Two
+Luis Perez
+Yuet Leung
+Yesehaq Fauconier
+Zachary Wong
 
 ##Overview
-A brief description of the project is given here.  The description is 1 to 3 sentences long.  Be concise and clear.
+A virtual launchpad that plays sampled or recorded audio in a matrix of buttons with a certain tempo.
 
 ##Screenshot
-(insert a screenshot here. You may opt to get rid of the title for it. You need at least one screenshot. Make it actually appear here, don't just add a link.)
+
 
 Here's a demonstration of how to display an image that's uploaded to this repo:
-![screenshot showing env diagram](withdraw.png)
+
 
 ##Concepts Demonstrated
-Identify the OPL concepts demonstrated in your project. Be brief. A simple list and example is sufficient. 
-* **Data abstraction** is used to provide access to the elements of the RSS feed.
-* The objects in the OpenGL world are represented with **recursive data structures.**
-* **Symbolic language processing techniques** are used in the parser.
+
+* **Data abstraction** is used to provide access to a library of sound samples.
+* Our timing function is implemented using  **recursive data structures.** as well as **lists**
 
 ##External Technology and Libraries
-Briefly describe the existing technology you utilized, and how you used it. Provide a link to that technology(ies).
+Rode NT1-A Condenser Microphone - higher quality recording device.
 
 ##Favorite Lines of Code
-####Mark (a team member)
-Each team member should identify a favorite line of code, expression, or procedure written by them, and explain what it does. Why is it your favorite? What OPL philosophy does it embody?
-Remember code looks something like this:
+####Zachary (a team member)
+Utilizes filestreaming and rsound.  We created a folder that contains all our audio samples and all samples can be cleanly loaded into an rsound clip using rackets pathing system.
 ```scheme
-(map (lambda (x) (foldr compose functions)) data)
+(define-runtime-path sounds "./sounds/")
+(define workit-path (build-path sounds "workit.wav"))
+(define work (clip (rs-read workit-path) 0 23321))
 ```
 ####Lillian (another team member)
+
 This expression reads in a regular expression and elegantly matches it against a pre-existing hashmap....
 ```scheme
 (let* ((expr (convert-to-regexp (read-line my-in-port)))
@@ -45,7 +45,7 @@ This expression reads in a regular expression and elegantly matches it against a
 ```
 
 ##Additional Remarks
-Anything else you want to say in your report. Can rename or remove this section.
+
 
 #How to Download and Run
 You may want to link to your latest release for easy downloading by people (such as Mark).
